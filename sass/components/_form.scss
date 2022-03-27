@@ -1,0 +1,100 @@
+.form {
+  background-color: #191c26;
+}
+.form__conteiner {
+  @include desk {
+    width: 655px;
+    padding-left: 55px;
+    padding-right: 40px;
+  }
+}
+.form__title {
+  margin-bottom: 44px;
+}
+
+.form__wrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  transition: border-color 2000ms var(--cubic);
+  @include tabl {
+    align-items: start;
+  }
+}
+.form__list {
+  width: 100%;
+  margin-bottom: 44px;
+  @include tabl {
+    display: flex;
+  }
+}
+.form__item {
+  width: 100%;
+
+  @media screen and(max-width: 767px) {
+    & + & {
+      margin-top: 44px;
+    }
+  }
+  @include tabl {
+    & + & {
+      margin-left: 30px;
+    }
+  }
+}
+
+.form__input {
+  outline: none;
+  width: 100%;
+  background-color: inherit;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.01em;
+  color: rgba(157, 164, 189, 0.4);
+  &::placeholder {
+    color: inherit;
+  }
+
+  &:focus,
+  &:hover {
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+  }
+}
+.form__label {
+  width: 100%;
+  margin-bottom: 44px;
+}
+.form__text {
+  width: 100%;
+  min-height: 76px;
+  resize: none;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.01em;
+  color: rgba(157, 164, 189, 0.4);
+
+  &:focus,
+  &:hover {
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+  }
+
+  &::placeholder {
+    color: inherit;
+  }
+}
+.form__btn {
+  padding-right: 38px;
+  padding-left: 38px;
+}

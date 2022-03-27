@@ -1,0 +1,6 @@
+.logo__icon {
+  fill: #ffffff;
+  @include tabl {
+    fill: #303030;
+  }
+}

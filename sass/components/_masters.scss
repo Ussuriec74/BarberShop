@@ -1,0 +1,57 @@
+.masters {
+  background-color: #f7f7f7;
+}
+.masters__conteiner {
+  @media screen and(min-width: 768px) and(max-width: 1279px) {
+    width: 528px;
+  }
+}
+.masters__title {
+  margin-bottom: 44px;
+}
+.masters__list {
+  margin-bottom: -64px;
+  @include desk {
+    margin-bottom: 0;
+    margin-right: -30px;
+    display: flex;
+  }
+}
+.profile {
+  width: 100%;
+  margin-bottom: 64px;
+  @include desk {
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
+}
+.profile__img {
+  width: 100%;
+  margin-bottom: 28px;
+
+  @include tabl {
+    width: 450px;
+    margin-bottom: 30px;
+  }
+  @include desk {
+    width: 100%;
+  }
+}
+.profile__name {
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(25 / 18);
+  letter-spacing: 00.02em;
+  color: #303030;
+}
+.profile__specialisation {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(19 / 14);
+  letter-spacing: 00.02em;
+  color: #ff6c00;
+}
